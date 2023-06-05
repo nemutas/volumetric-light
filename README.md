@@ -1,6 +1,7 @@
 # About
 
 This application was created as a template for postprocessing.<br />
+The code corresponding to postprocessing is [here](https://github.com/nemutas/volumetric-light/tree/main/src/scripts/webgl/effects).<br />
 It is based on the R3F [sample](https://codesandbox.io/s/w633u), which I love.
 
 https://nemutas.github.io/volumetric-light/
