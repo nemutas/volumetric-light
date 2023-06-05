@@ -1,11 +1,19 @@
 # About
 
-This repository is [Three.js](https://threejs.org/) template with [Astro](https://astro.build/).
+This application was created as a template for postprocessing.<br />
+It is based on the R3F [sample](https://codesandbox.io/s/w633u), which I love.
 
 https://nemutas.github.io/volumetric-light/
 
-# Using
+<img src='https://github.com/nemutas/volumetric-light/assets/46724121/887e679a-aed9-40e1-b328-ed35b9b2a038' width='800' />
 
-- VSCode
-- [WebGL GLSL Editor](https://marketplace.visualstudio.com/items?itemName=raczzalan.webgl-glsl-editor) (v1.3.0 -> If the extension is set to glsl, errors originating from threejs built-in variables will not occur.)
-- [Prettier Plugin for Astro](https://github.com/withastro/prettier-plugin-astro)
+# References
+
+- [Volumetric light](https://codesandbox.io/s/w633u)
+- [Horse Sculpture](https://skfb.ly/owNtW)
+- [Draco](https://github.com/google/draco)
+
+# Memo
+
+Three.jsには[DRACO Loader](https://threejs.org/docs/#examples/en/loaders/DRACOLoader)がありますが、そのまま使うとgeometryしか読み込めません。<br />
+大抵の場合はMaterialも読み込みたく、その場合は[GLTFLoader](https://threejs.org/docs/#examples/en/loaders/GLTFLoader)にDRACOLoaderを[セットして](https://threejs.org/docs/#examples/en/loaders/GLTFLoader.setDRACOLoader)読み込ませる必要があります。
